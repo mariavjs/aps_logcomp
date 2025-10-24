@@ -1,0 +1,35 @@
+// Teste da HamburgueriaVM
+
+// Abrindo mesas
+abrir_mesa(1);
+abrir_mesa(2);
+abrir_mesa(3);
+
+// Fazendo pedidos
+fazer_pedido(mesa1, hamburguer);
+fazer_pedido(mesa1, batata);
+fazer_pedido(mesa2, bebida);
+fazer_pedido(mesa3, hamburguer);
+
+print("Pedidos realizados!");
+
+// Entregando pedidos enquanto a fila não estiver vazia
+while fila not empty {
+    entregar_proximo;
+    print("Pedido entregue!");
+}
+
+// Verificando estado da mesa e fechando conta
+if mesa1 == aberta then {
+    pagar(mesa1);
+    print("Mesa 1 paga!");
+}
+
+if mesa2 == paga then {
+    print("Mesa 2 já foi paga!");
+} else {
+    pagar(mesa2);
+    print("Mesa 2 paga agora!");
+}
+
+print("Fim do expediente!");
