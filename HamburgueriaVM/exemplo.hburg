@@ -1,0 +1,14 @@
+// exemplo simples
+abrir_mesa(1);
+fazer_pedido(mesa1, hamburguer);
+fazer_pedido(mesa1, bebida);
+print("Pedidos adicionados");
+if mesa1 == aberta then {
+  entregar_proximo;
+} else {
+  print("Mesa fechada");
+}
+while fila not empty {
+  entregar_proximo;
+}
+pagar(mesa1);
